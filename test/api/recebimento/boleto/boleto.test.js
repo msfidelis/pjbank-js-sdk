@@ -60,7 +60,7 @@ suite("#RECEBIMENTO - #Boleto Bancário", () => {
         }).then((boleto) => {
 
             expect(boleto).to.have.property('status');
-            assert.equal(boleto.status, 201);
+            assert.equal(boleto.status, 200);
             expect(boleto).to.have.property('msg');
             assert.equal(boleto.msg, 'Sucesso.');
 
